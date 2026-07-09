@@ -1,98 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theophanie Market Lakay</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Theophanie Market Lakay — Épicerie haïtienne et caribéenne à Charleroi, PA. Produits frais, épicerie, viandes, fruits de mer et plus.">
+<title>Theophanie Market Lakay | Épicerie Haïtienne & Caribéenne à Charleroi, PA</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700;9..144,900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
 <!-- HEADER -->
-<header>
-    <div class="container">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
+<header id="site-header">
+    <div class="container header-inner">
+        <a href="#home" class="logo">
+            <span class="logo-icon"><i class="fas fa-basket-shopping"></i></span>
+            <span class="logo-text">
+                <span class="logo-title">Theophanie</span>
+                <span class="logo-subtitle">Market Lakay</span>
+            </span>
+        </a>
 
-        <nav>
+        <nav id="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Promotions</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#categories">Products</a></li>
+                <li><a href="#promotions">Promotions</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <div class="contact-btns">
-            <a href="tel:7243795550" class="call-btn">
-                <i class="fas fa-phone"></i> Call Now
+            <a href="tel:+17244671375" class="call-btn">
+                <i class="fas fa-phone"></i> <span>Call Now</span>
             </a>
-
-            <a href="https://wa.me/17243795550" class="whatsapp-btn">
-                <i class="fab fa-whatsapp"></i> WhatsApp
+            <a href="https://wa.me/17244671375" class="whatsapp-btn" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
             </a>
         </div>
+
+        <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero">
+<section class="hero" id="home">
+    <div class="hero-texture" aria-hidden="true"></div>
     <div class="hero-content">
-        <h1>LA THEOPHANIE MARKET LAKAY</h1>
-        <p>Un marché pour vous, une maison pour tous.</p>
+        <p class="eyebrow">Charleroi, Pennsylvania</p>
+        <h1>La Theophanie Market <span>Lakay</span></h1>
+        <p class="hero-sub">Un marché pour vous, une maison pour tous.</p>
+        <p class="hero-desc">Fresh produce, Caribbean groceries, and everyday essentials — brought home, the way lakay should feel.</p>
 
         <div class="hero-buttons">
-            <a href="#" class="btn">Shop Now</a>
+            <a href="#categories" class="btn primary">Shop Our Categories</a>
             <a href="#contact" class="btn secondary">Contact Us</a>
+        </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+</section>
+
+<!-- MARKET AWNING DIVIDER (green bar) -->
+<div class="awning-divider" aria-hidden="true"></div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="section-inner">
+        <p class="eyebrow center">About Us</p>
+        <h2>Rooted in home, open to everyone</h2>
+        <p class="lead">
+            Welcome to Theophanie Market Lakay, your trusted Haitian grocery store
+            offering fresh products, Caribbean foods, and daily essentials — all in one place.
+        </p>
+
+        <div class="stats-row">
+            <div class="stat">
+                <i class="fas fa-carrot"></i>
+                <h3>Fresh Daily</h3>
+                <p>Produce sourced and stocked fresh, every day.</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-earth-americas"></i>
+                <h3>Caribbean Roots</h3>
+                <p>Authentic Haitian & Caribbean brands you know and trust.</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-house-chimney"></i>
+                <h3>Feels Like Lakay</h3>
+                <p>A warm welcome and friendly service, every single visit.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about">
-    <h2>About Us</h2>
-    <p>
-        Welcome to Theophanie Market Lakay, your trusted Haitian grocery store
-        offering fresh products, Caribbean foods, and daily essentials.
-    </p>
+<!-- CATEGORIES / PRODUCTS -->
+<section class="categories" id="categories">
+    <div class="section-inner">
+        <p class="eyebrow center">What We Offer</p>
+        <h2>Our Categories</h2>
+
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-carrot"></i>
+                <h3>Fruits &amp; Vegetables</h3>
+            </div>
+            <div class="card">
+                <i class="fas fa-bowl-rice"></i>
+                <h3>Grocery</h3>
+            </div>
+            <div class="card">
+                <i class="fas fa-drumstick-bite"></i>
+                <h3>Meat</h3>
+            </div>
+            <div class="card">
+                <i class="fas fa-fish"></i>
+                <h3>Seafood</h3>
+            </div>
+            <div class="card">
+                <i class="fas fa-bottle-water"></i>
+                <h3>Beverages</h3>
+            </div>
+            <div class="card">
+                <i class="fas fa-spray-can-sparkles"></i>
+                <h3>Beauty</h3>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- CATEGORIES -->
-<section class="categories">
-    <h2>Our Categories</h2>
-
-    <div class="grid">
-        <div class="card">🥬 Fruits & Vegetables</div>
-        <div class="card">🍚 Grocery</div>
-        <div class="card">🥩 Meat</div>
-        <div class="card">🐟 Seafood</div>
-        <div class="card">🥤 Beverages</div>
-        <div class="card">💄 Beauty</div>
+<!-- PROMOTIONS -->
+<section class="promotions" id="promotions">
+    <div class="section-inner promo-inner">
+        <div class="promo-text">
+            <p class="eyebrow">Promotions</p>
+            <h2>This Week at the Market</h2>
+            <p>Ask in-store or call us for this week's fresh arrivals and special prices on Caribbean staples.</p>
+            <a href="tel:+17244671375" class="btn primary">Ask About Specials</a>
+        </div>
+        <div class="promo-badge">
+            <i class="fas fa-tags"></i>
+            <span>Fresh deals<br>every week</span>
+        </div>
     </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-    <h2>Contact</h2>
+    <div class="section-inner">
+        <p class="eyebrow center">Contact</p>
+        <h2>Come see us at Lakay</h2>
 
-    <p>📍 408 McKean Ave, Charleroi, PA 15022</p>
-    <p>📞 (724) 379-5550</p>
-    <p>📧 roseniehm@gmail.com</p>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <i class="fas fa-location-dot"></i>
+                <h3>Address</h3>
+                <p><a href="https://maps.google.com/?q=525+Fallowfield+Avenue,+Charleroi,+PA+15022" target="_blank" rel="noopener">525 Fallowfield Avenue<br>Charleroi, PA 15022</a></p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p><a href="tel:+17244671375">+1 (724) 467-1375</a></p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:roseniehm@gmail.com">roseniehm@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="map-wrap">
+            <iframe
+                title="Theophanie Market Lakay location"
+                src="https://maps.google.com/maps?q=525%20Fallowfield%20Avenue%2C%20Charleroi%2C%20PA%2015022&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Theophanie Market Lakay. All rights reserved.</p>
+    <div class="section-inner footer-inner">
+        <div class="footer-brand">
+            <span class="logo-icon"><i class="fas fa-basket-shopping"></i></span>
+            <div>
+                <p class="footer-title">Theophanie Market Lakay</p>
+                <p class="footer-tag">Un marché pour vous, une maison pour tous.</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#categories">Products</a>
+            <a href="#promotions">Promotions</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <p><i class="fas fa-location-dot"></i> 525 Fallowfield Avenue, Charleroi, PA 15022</p>
+            <p><i class="fas fa-phone"></i> +1 (724) 467-1375</p>
+            <p><i class="fas fa-envelope"></i> roseniehm@gmail.com</p>
+        </div>
+    </div>
+
+    <p class="footer-bottom">© 2026 Theophanie Market Lakay. All rights reserved.</p>
 </footer>
 
 <script src="js/script.js"></script>
